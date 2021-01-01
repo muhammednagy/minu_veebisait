@@ -2,8 +2,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<meta charset="utf-8" />
-	<title>Muhammed Nagy</title>
-	<meta name="author" content="Muhammed Nagy"/>
+	<title>Nagy</title>
+	<meta name="author" content="Nagy"/>
 	<meta name="Description" content="Just a student who love coding and learning"/>
 	<script src="js/jquery-1.7.1.min.js"></script>
 	<script src="js/jquery.mousewheel-min.js"></script>
@@ -23,6 +23,8 @@
 
 
 </script>
+
+<meta name="google-site-verification" content="Ie7JEO5fVDnhADudhKO4M-xw0cSTUS2IlYauFC-cgI0" />
 </head>
 <body>
 
@@ -32,15 +34,15 @@
 			var id = 1;
 			$('#terminal').terminal(function(command, term) {
 				if (command == 'help' || command == 'h') {
-					term.echo("Available commands are email, resume, github, linkedin,facebook and twitter");
+					term.echo("Available commands are email, resume, github, linkedin, facebook, twitter and Medium(My personal EN blog)");
 				} else if (command == 'resume'){
-					term.echo("https://muhnagy.com/resume.pdf");
+					term.echo("https://nagy.ee/resume.pdf");
 				} else if (command == "email") {
-					term.echo("me@muhnagy.com");
+					term.echo("mina@nagy.ee");
 				} else if(command == "github") {
 					term.echo("https://github.com/muhammednagy");
 				} else if(command == "linkedin") {
-					term.echo("https://eg.linkedin.com/in/muhammednagy");
+					term.echo("https://ee.linkedin.com/in/muhammednagy");
 				} else if(command == "twitter") {
 					term.echo("https://twitter.com/muhammed_nagy_0");
 				} else if (command == 'facebook'){
@@ -48,16 +50,18 @@
 				} else if (command == 'whoami'){
 					term.echo("Muhammed_Nagy");
 				} else if (command == 'whereami'){
-					term.echo("https://muhnagy.com");
-				} else {
+					term.echo("https://nagy.ee");
+				} else if (command == 'Medium'){
+					term.echo("https://blog.muhnagy.com");
+				} else {	
 					term.echo("Unknown command: " + command);
-				}
+				} 
 			}, {
 				greetings:
-				"welcome to my website.\n\
+				"Tere tulemast.\n\
 				As you can see, you can use the terminal.\n\
 				use 'help' if you need it!.\n\
-				for normal website please visit  https://www.muhnagy.com/normal \n\ ",
+				for normal website please visit  https://nagy.ee/normal \n\ ",
 					onBlur: function() {
 						return false;
 					}
